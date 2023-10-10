@@ -2,12 +2,12 @@ Continent,CountryCode,Country,Latitude,Longitude,Health Expenditure - % of GDP,H
 Asia,AFG,Afghanistan,33,65,15.53,0.37
 Europe,ALB,Albania,41,20,,1.36
 Africa,DZA,Algeria,28,3,6.32,
-Oceania,ASM,AmericanSamoa,-14.33,-170,,
+Oceania,ASM,American Samoa,-14.33,-170,,
 Europe,AND,Andorra,42.5,1.5,9.05,
 Africa,AGO,Angola,-12.5,18.5,2.91,
 NorthAmerica,AIA,Anguilla,18.25,-63.17,,
 Antarctica,ATA,Antarctica,-90,0,,
-NorthAmerica,ATG,AntiguaandBarbuda,17.05,-61.8,5.61,1.11
+NorthAmerica,ATG,Antigua and Barbuda,17.05,-61.8,5.61,1.11
 SouthAmerica,ARG,Argentina,-34,-64,9.98,
 Asia,ARM,Armenia,40,45,12.24,4.03
 NorthAmerica,ABW,Aruba,12.5,-69.97,,
@@ -17,7 +17,7 @@ Asia,AZE,Azerbaijan,40.5,47.5,4.61,7.97
 NorthAmerica,BHS,Bahamas,24.25,-76,7.59,1.06
 Asia,BHR,Bahrain,26,50.55,4.72,
 Asia,BGD,Bangladesh,24,90,2.63,0.17
-NorthAmerica,BRB,Barbados,13.17,-59.53,7.20,1.05
+NorthAmerica,BRB,Barbados,13.17,-59.53,7.2,1.05
 Europe,BLR,Belarus,53,28,6.41,7.45
 Europe,BEL,Belgium,50.83,4,11.06,
 NorthAmerica,BLZ,Belize,17.25,-88.75,6.92,2.11
@@ -25,57 +25,57 @@ Africa,BEN,Benin,9.5,2.25,2.59,0.41
 NorthAmerica,BMU,Bermuda,32.33,-64.75,,
 Asia,BTN,Bhutan,27.5,90.5,4.37,1.72
 SouthAmerica,BOL,Bolivia,-17,-65,7.86,1.07
-Europe,BIH,BosniaandHerzegovina,44,18,9.84,1.02
+Europe,BIH,Bosnia and Herzegovina,44,18,9.84,1.02
 Africa,BWA,Botswana,-22,24,6.19,1.29
 SouthAmerica,BRA,Brazil,-10,-55,10.31,
-Asia,BRN,BruneiDarussalam,4.5,114.67,2.39,1.44
+Asia,BRN,Brunei Darussalam,4.5,114.67,2.39,1.44
 Europe,BGR,Bulgaria,43,25,8.52,
-Africa,BFA,BurkinaFaso,13,-2,6.72,0.31
-Africa,BDI,Burundi,-3.5,30,6.50,0.5
+Africa,BFA,Burkina Faso,13,-2,6.72,0.31
+Africa,BDI,Burundi,-3.5,30,6.5,0.5
 Asia,CPV,Cambodia,13,105,6.02,1
 Africa,KHM,Cameroon,6,12,7.51,0.57
 NorthAmerica,CMR,Canada,60,-95,3.77,0.79
-Africa,CAN,CapeVerde,16,-24,12.94,2.27
-NorthAmerica,CYM,CaymanIslands,19.5,-80.5,,
-Africa,CAF,CentralAfricanRepublic,7,21,9.40,0.48
+Africa,CAN,Cape Verde,16,-24,12.94,2.27
+NorthAmerica,CYM,Cayman Islands,19.5,-80.5,,
+Africa,CAF,Central African Republic,7,21,9.4,0.48
 Africa,TCD,Chad,15,19,5.41,0.65
 SouthAmerica,CHL,Chile,-30,-71,9.75,1.04
 Asia,CHN,China,35,105,5.59,
-Asia,CXR,ChristmasIsland,-10.5,105.67,,
-Asia,CCK,Cocos(Keeling)Islands,-12.5,96.83,,
+Asia,CXR,Christmas Island,-10.5,105.67,,
+Asia,CCK,Cocos (Keeling) Islands,-12.5,96.83,,
 SouthAmerica,COL,Colombia,4,-72,8.99,
 Africa,COM,Comoros,-12.17,44.25,5.35,0.68
 Africa,COG,Congo,-1,15,4.47,
-Africa,COD,"Congo,TheDemocraticRepublicofthe",0,25,4.05,0.45
-Oceania,COK,CookIslands,-21.23,-159.77,,
-NorthAmerica,CRI,CostaRica,10,-84,7.86,0.84
-Africa,CIV,Coted'Ivoire,8,-5,3.72,1.71
+Africa,COD,"Congo, The Democratic Republic of the",0,25,4.05,0.45
+Oceania,COK,Cook Islands,-21.23,-159.77,,
+NorthAmerica,CRI,Costa Rica,10,-84,7.86,0.84
+Africa,CIV,Cote d'Ivoire,8,-5,3.72,1.71
 Europe,HRV,Croatia,45.17,15.5,7.77,1.54
 NorthAmerica,CUB,Cuba,21.5,-80,12.49,2.04
 Europe,CYP,Cyprus,35,33,8.09,7.54
-Europe,CZE,CzechRepublic,49.75,15.5,9.24,1.29
+Europe,CZE,Czech Republic,49.75,15.5,9.24,1.29
 Europe,DNK,Denmark,56,10,10.53,1.01
 Africa,DJI,Djibouti,11.5,43,2.01,
 NorthAmerica,DMA,Dominica,15.42,-61.33,5.65,5.56
-NorthAmerica,DOM,DominicanRepublic,19,-70.67,4.94,
+NorthAmerica,DOM,Dominican Republic,19,-70.67,4.94,
 SouthAmerica,ECU,Ecuador,-2,-77.5,8.48,0.33
 Africa,EGY,Egypt,27,30,4.36,0.62
-NorthAmerica,SLV,ElSalvador,13.83,-88.92,9.85,0.47
-Africa,GNQ,EquatorialGuinea,2,10,3.77,
+NorthAmerica,SLV,El Salvador,13.83,-88.92,9.85,0.47
+Africa,GNQ,Equatorial Guinea,2,10,3.77,
 Africa,ERI,Eritrea,15,39,4.09,0.36
 Europe,EST,Estonia,59,26,7.75,1.94
 Africa,SWZ,Eswatini,26.5225,31.4659,6.51,0.8
 Africa,ETH,Ethiopia,8,38,3.48,0.22
-SouthAmerica,FLK,FalklandIslands(Malvinas),-51.75,-59,,
-Europe,FRO,FaroeIslands,62,-7,,
+SouthAmerica,FLK,Falkland Islands (Malvinas),-51.75,-59,,
+Europe,FRO,Faroe Islands,62,-7,,
 Oceania,FJI,Fiji,-18,175,3.75,0
 Europe,FIN,Finland,64,26,9.61,1.38
 Europe,FRA,France,46,2,12.21,
-SouthAmerica,GUF,FrenchGuiana,4,-53,,
-Oceania,PYF,FrenchPolynesia,-15,-140,,
+SouthAmerica,GUF,French Guiana,4,-53,,
+Oceania,PYF,French Polynesia,-15,-140,,
 Africa,GAB,Gabon,-1,11.75,3.43,3.53
-Africa,GMB,"Gambia,The",13.47,-16.57,2.61,0.7
-Asia,GEO,Georgia,42,43.5,7.60,2.21
+Africa,GMB,"Gambia, The",13.47,-16.57,2.61,0.7
+Asia,GEO,Georgia,42,43.5,7.6,2.21
 Europe,DEU,Germany,51,9,12.82,
 Africa,GHA,Ghana,8,-2,3.99,1.36
 Europe,GIB,Gibraltar,36.18,-5.37,,
@@ -90,31 +90,31 @@ Africa,GNB,Guinea-Bissau,12,-15,8.41,56.45
 SouthAmerica,GUY,Guyana,5,-59,5.51,3.38
 NorthAmerica,HTI,Haiti,19,-72.42,3.22,0.24
 NorthAmerica,HND,Honduras,15,-86.5,9.04,0.36
-Asia,HKG,HongKong,22.25,114.17,,
+Asia,HKG,Hong Kong,22.25,114.17,,
 Europe,HUN,Hungary,47,20,7.25,1.02
 Europe,ISL,Iceland,65,-18,9.56,3.64
 Asia,IND,India,20,77,2.96,
 Asia,IDN,Indonesia,-5,120,3.41,0.43
-Asia,IRN,"Iran,IslamicRepublicof",32,53,5.34,
+Asia,IRN,"Iran, Islamic Republic of",32,53,5.34,
 Asia,IRQ,Iraq,33,44,5.08,0.95
-Europe,IRL,Ireland,53,-8,7.10,
+Europe,IRL,Ireland,53,-8,7.1,
 Asia,ISR,Israel,31.5,34.75,8.32,0.56
 Europe,ITA,Italy,42.83,12.83,9.63,2.08
 NorthAmerica,JAM,Jamaica,18.25,-77.5,6.61,0.75
-Asia,JPN,Japan,36,138,10.90,
+Asia,JPN,Japan,36,138,10.9,
 Asia,JOR,Jordan,31,36,7.47,1.94
 Asia,KAZ,Kazakhstan,48,68,3.79,3.52
 Africa,KEN,Kenya,1,38,4.29,1.47
 Oceania,KIR,Kiribati,1.42,173,11.64,0
-Asia,PRK,"Korea,DemocraticPeople'sRepublicof",40,127,,6.86
-Asia,KOR,"Korea,Republicof",37,127.5,8.36,3.42
+Asia,PRK,"Korea, Democratic People's Republic of",40,127,,6.86
+Asia,KOR,"Korea, Republic of",37,127.5,8.36,3.42
 Asia,KWT,Kuwait,29.34,47.66,6.31,
 Asia,KGZ,Kyrgyzstan,41,75,5.26,2.63
-Asia,LAO,LaoPeople'sDemocraticRepublic,18,105,2.69,2.25
+Asia,LAO,Lao People's Democratic Republic,18,105,2.69,2.25
 Europe,LVA,Latvia,57,25,7.45,1.56
 Asia,LBN,Lebanon,33.83,35.83,7.95,3.09
 Africa,LSO,Lesotho,-29.5,28.5,11.78,
-Africa,LBR,Liberia,6.5,-9.5,9.50,0.37
+Africa,LBR,Liberia,6.5,-9.5,9.5,0.37
 Africa,LBY,Libya,25,17,,2.64
 Europe,LIE,Liechtenstein,47.17,9.53,,
 Europe,LTU,Lithuania,56,24,7.54,2.15
@@ -126,14 +126,14 @@ Asia,MYS,Malaysia,2.5,112.5,4.12,0.47
 Asia,MDV,Maldives,3.25,73,11.35,6.67
 Africa,MLI,Mali,17,-4,4.31,0.46
 Europe,MLT,Malta,35.83,14.58,10.84,0.93
-Oceania,MHL,MarshallIslands,9,168,13.01,3.8
+Oceania,MHL,Marshall Islands,9,168,13.01,3.8
 NorthAmerica,MTQ,Martinique,14.67,-61,,
 Africa,MRT,Mauritania,20,-12,3.36,1.03
 Africa,MUS,Mauritius,-20.28,57.55,6.66,0.96
 Africa,MYT,Mayotte,-12.83,45.17,,
 NorthAmerica,MEX,Mexico,23,-102,6.24,3.51
-Oceania,FSM,"Micronesia,FederatedStatesof",6.92,158.25,11.56,4.83
-Europe,MDA,"Moldova,Republicof",47,29,6.78,2.12
+Oceania,FSM,"Micronesia, Federated States of",6.92,158.25,11.56,4.83
+Europe,MDA,"Moldova, Republic of",47,29,6.78,2.12
 Europe,MCO,Monaco,43.73,7.4,1.67,10.57
 Asia,MNG,Mongolia,46,105,4.94,2.5
 Europe,MNE,Montenegro,42,19,11.42,2.09
@@ -141,90 +141,90 @@ NorthAmerica,MSR,Montserrat,16.75,-62.2,,
 Africa,MAR,Morocco,32,-5,5.99,
 Africa,MOZ,Mozambique,-18.25,35,7.62,
 Asia,MMR,Myanmar,22,98,4.62,0.63
-Africa,NAM,Namibia,-22,17,8.90,1.91
+Africa,NAM,Namibia,-22,17,8.9,1.91
 Oceania,NRU,Nauru,-0.53,166.92,11.97,9.95
 Asia,NPL,Nepal,28,84,5.17,0.38
 Europe,NLD,Netherlands,52.5,5.75,11.14,0.76
-NorthAmerica,ANT,NetherlandsAntilles,12.25,-68.75,,
-Oceania,NCL,NewCaledonia,-21.5,165.5,,
-Europe,MKD,NorthMacedonia,41.83,22,7.89,4.08
-Oceania,NZL,NewZealand,-41,174,10.03,
+NorthAmerica,ANT,Netherlands Antilles,12.25,-68.75,,
+Oceania,NCL,New Caledonia,-21.5,165.5,,
+Europe,MKD,North Macedonia,41.83,22,7.89,4.08
+Oceania,NZL,New Zealand,-41,174,10.03,
 NorthAmerica,NIC,Nicaragua,13,-85,8.63,0.95
-Africa,NER,Niger,16,8,6.20,0.55
+Africa,NER,Niger,16,8,6.2,0.55
 Africa,NGA,Nigeria,10,8,3.38,
-Oceania,NFK,NorfolkIsland,-29.03,167.95,,
-Oceania,MNP,NorthernMarianaIslands,15.2,145.75,,
+Oceania,NFK,Norfolk Island,-29.03,167.95,,
+Oceania,MNP,Northern Mariana Islands,15.2,145.75,,
 Europe,NOR,Norway,62,10,11.42,
 Asia,OMN,Oman,21,57,5.33,1.35
 Asia,PAK,Pakistan,30,70,2.95,0.53
 Oceania,PLW,Palau,7.5,134.5,18.39,
 Asia,PSE,Palestine,32,35.25,,
 NorthAmerica,PAN,Panama,9,-80,9.66,0.91
-Oceania,PNG,PapuaNewGuinea,-6,147,2.53,1.57
+Oceania,PNG,Papua New Guinea,-6,147,2.53,1.57
 SouthAmerica,PRY,Paraguay,-23,-58,7.58,2.43
-SouthAmerica,PER,Peru,-10,-76,6.30,
+SouthAmerica,PER,Peru,-10,-76,6.3,
 Asia,PHL,Philippines,13,122,5.11,1.81
 Europe,POL,Poland,52,20,6.49,0.94
 Europe,PRT,Portugal,39.5,-8,10.55,
-NorthAmerica,PRI,PuertoRico,18.25,-66.5,,
+NorthAmerica,PRI,Puerto Rico,18.25,-66.5,,
 Asia,QAT,Qatar,25.5,51.25,4.18,
 Africa,REU,Reunion,-21.1,55.6,,
 Europe,ROU,Romania,46,25,6.27,1.68
-Europe,RUS,RussianFederation,60,100,7.60,
+Europe,RUS,Russian Federation,60,100,7.6,
 Africa,RWA,Rwanda,-2,30,7.32,
-Africa,SHN,SaintHelena,-15.93,-5.7,,
-NorthAmerica,SPM,SaintPierreandMiquelon,46.83,-56.33,,
+Africa,SHN,Saint Helena,-15.93,-5.7,,
+NorthAmerica,SPM,Saint Pierre and Miquelon,46.83,-56.33,,
 Oceania,WSM,Samoa,-13.58,-172.33,5.33,4.2
-Europe,SMR,SanMarino,43.77,12.42,8.69,3.18
-Africa,STP,SaoTomeandPrincipe,1,7,4.91,
-Asia,SAU,SaudiArabia,25,45,,1.04
+Europe,SMR,San Marino,43.77,12.42,8.69,3.18
+Africa,STP,Sao Tome and Principe,1,7,4.91,
+Asia,SAU,Saudi Arabia,25,45,,1.04
 Africa,SEN,Senegal,14,-14,5.15,0.16
 Europe,SRB,Serbia,44,21,8.73,1.09
 Africa,SYC,Seychelles,-4.58,55.67,6.39,1.08
-Africa,SLE,SierraLeone,8.5,-11.5,8.76,
+Africa,SLE,Sierra Leone,8.5,-11.5,8.76,
 Asia,SGP,Singapore,1.37,103.8,6.05,0.5
 Europe,SVK,Slovakia,48.67,19.5,7.23,1.54
 Europe,SVN,Slovenia,46,15,9.45,1.25
-Oceania,SLB,SolomonIslands,-8,159,4.43,
+Oceania,SLB,Solomon Islands,-8,159,4.43,
 Africa,SOM,Somalia,10,49,,
-Africa,ZAF,SouthAfrica,-29,24,8.58,0.67
-Africa,SSD,SouthSudan,6.877,31.307,5.25,
+Africa,ZAF,South Africa,-29,24,8.58,0.67
+Africa,SSD,South Sudan,6.877,31.307,5.25,
 Europe,ESP,Spain,40,-4,10.71,1.63
-Asia,LKA,SriLanka,7,81,4.07,0.099
-NorthAmerica,KNA,St.KittsandNevis,17.3578,-62.783,5.37,
-NorthAmerica,LCA,St.Lucia,13.9094,-60.9789,6.74,
-NorthAmerica,MAF,St.Martin(Frenchpart),18.0859,-63.0619,,
-NorthAmerica,VCT,St.VincentandtheGrenadines,12.9843,-61.2872,4.82,
+Asia,LKA,Sri Lanka,7,81,4.07,0.099
+NorthAmerica,KNA,St. Kitts and Nevis,17.3578,-62.783,5.37,
+NorthAmerica,LCA,St. Lucia,13.9094,-60.9789,6.74,
+NorthAmerica,MAF,St. Martin (French part),18.0859,-63.0619,,
+NorthAmerica,VCT,St. Vincent and the Grenadines,12.9843,-61.2872,4.82,
 Africa,SDN,Sudan,12.8628,30.2176,3.02,
 SouthAmerica,SUR,Suriname,4,-56,6.77,0.37
 Europe,SWE,Sweden,62,15,11.38,
-Europe,CHE,Switzerland,47,8,11.80,
-Asia,SYR,SyrianArabRepublic,35,38,,
+Europe,CHE,Switzerland,47,8,11.8,
+Asia,SYR,Syrian Arab Republic,35,38,,
 Asia,TJK,Tajikistan,39,71,8.18,4.68
-Africa,TZA,"Tanzania,UnitedRepublicof",-6,35,3.75,
+Africa,TZA,"Tanzania, United Republic of",-6,35,3.75,
 Asia,THA,Thailand,15,100,4.36,1.84
 Asia,TLS,Timor-Leste,-8.8742,125.7275,9.85,
 Africa,TGO,Togo,8,1.17,5.96,0.6
 Oceania,TON,Tonga,-20,-175,5.32,3.8
-NorthAmerica,TTO,TrinidadandTobago,11,-61,7.31,
+NorthAmerica,TTO,Trinidad and Tobago,11,-61,7.31,
 Africa,TUN,Tunisia,34,9,6.34,2.33
 Asia,TUR,Turkiye,39,35,4.62,1.55
 Asia,TKM,Turkmenistan,40,60,5.68,
-NorthAmerica,TCA,TurksandCaicosIslands,21.75,-71.58,,
+NorthAmerica,TCA,Turks and Caicos Islands,21.75,-71.58,,
 Oceania,TUV,Tuvalu,-8,178,21.54,0.016
 Africa,UGA,Uganda,1,32,3.96,0.4
 Europe,UKR,Ukraine,49,32,7.62,
-Asia,ARE,UnitedArabEmirates,24,54,5.67,
-Europe,GBR,UnitedKingdom,54,-2,11.98,
-NorthAmerica,USA,UnitedStates,38,-97,18.82,
+Asia,ARE,United Arab Emirates,24,54,5.67,
+Europe,GBR,United Kingdom,54,-2,11.98,
+NorthAmerica,USA,United States,38,-97,18.82,
 SouthAmerica,URY,Uruguay,-33,-56,9.15,3.93
 Asia,UZB,Uzbekistan,41,64,6.75,
 Oceania,VUT,Vanuatu,-16,167,3.97,2.37
 SouthAmerica,VEN,Venezuela,8,-66,3.82,
 Asia,VNM,Vietnam,16,106,4.68,
-NorthAmerica,VGB,"VirginIslands,British",18.5,-64.5,,
-NorthAmerica,VIR,"VirginIslands,U.S.",18.33,-64.83,,
-Africa,ESH,WesternSahara,24.5,-13,,
+NorthAmerica,VGB,"Virgin Islands, British",18.5,-64.5,,
+NorthAmerica,VIR,"Virgin Islands, U.S.",18.33,-64.83,,
+Africa,ESH,Western Sahara,24.5,-13,,
 Asia,YEM,Yemen,15,48,,2.97
 Africa,ZMB,Zambia,-15,30,5.62,0.45
 Africa,ZWE,Zimbabwe,-20,30,3.43,0.52

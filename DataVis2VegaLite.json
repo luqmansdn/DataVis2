@@ -37,7 +37,10 @@
         "color": {
             "field": "Health Expenditure - % of GDP",
             "type": "quantitative",
-            "scale": {"scheme": "teals"}
+            "scale": {
+                "type": "threshold",
+                "domain": [5,10,15,20],
+                "range":  ["#D4AC0D", "#D68910", "#CA6F1E", "#BA4A00"]}
         },
         "tooltip": [
             {
