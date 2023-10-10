@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Global Hospital Infrastructure",
+    "title": "Health Expenditure - % of GDP",
     "width": 800,
     "height": 450,
     "projection": {
@@ -19,26 +19,25 @@
             "lookup": "properties.NAME",
             "from": {
                 "data": {
-                    "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/Data%20Visualisation%202.csv"
+                    "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
                 },
                 "key": "Country",
                 "fields": [
-                    "HospitalDensityper100000people"
+                    "Health Expenditure - % of GDP"
                 ]
             }
-        },
-        {
-            "calculate": "datum.HospitalDensityper100000people + 0.1",
-            "as": "HospitalDensityper100000people"
         }
     ],
     "mark": {
-        "type": "geoshape"
+        "type": "geoshape",
+        "stroke": "#141010",
+        "strokeWidth": 0.5
     },
     "encoding": {
         "color": {
-            "field": "HospitalDensityper100000people",
-            "type": "nominal"
+            "field": "Health Expenditure - % of GDP",
+            "type": "quantitative",
+            "scale": {"scheme": "teals"}
         },
         "tooltip": [
             {
@@ -47,9 +46,10 @@
                 "title": "Country"
             },
             {
-                "field": "HospitalDensityper100000people",
+                "field": "Health Expenditure - % of GDP",
                 "type": "quantitative"
             }
         ]
-    }
+    },
+    "config": {"mark": {"invalid": null}}
 }
