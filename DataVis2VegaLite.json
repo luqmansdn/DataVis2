@@ -28,7 +28,7 @@
         },
         {
             "calculate": "datum.Active + 0.1",
-            "as": "Active Cases"
+            "as": "Hospital Density per 100000 people"
         }
     ],
     "mark": {
@@ -36,7 +36,7 @@
     },
     "encoding": {
         "color": {
-            "field": "Active Cases",
+            "field": "Hospital Density per 100000 people",
             "type": "quantitative",
             "scale": {
                 "type": "log"
