@@ -1,11 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Global Hospital Infrastructure",
     "width": 800,
     "height": 450,
-    "title": "Global Hospital Infrastructure",
     "projection": {
         "type": "equalEarth"
     },
+    
     "data": {
         "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/ne_110m.json",
         "format": {
@@ -22,13 +23,13 @@
                 },
                 "key": "Country",
                 "fields": [
-                    "Hospital Density per 100000 people"
+                    "HospitalDensityper100000people"
                 ]
             }
         },
         {
-            "calculate": "datum.Active + 0.1",
-            "as": "Hospital Density per 100000 people"
+            "calculate": "datum.HospitalDensityper100000people + 0.1",
+            "as": "HospitalDensityper100000people"
         }
     ],
     "mark": {
@@ -36,11 +37,8 @@
     },
     "encoding": {
         "color": {
-            "field": "Hospital Density per 100000 people",
-            "type": "quantitative",
-            "scale": {
-                "type": "log"
-            }
+            "field": "HospitalDensityper100000people",
+            "type": "nominal"
         },
         "tooltip": [
             {
@@ -49,7 +47,7 @@
                 "title": "Country"
             },
             {
-                "field": "Hospital Density per 100000 people",
+                "field": "HospitalDensityper100000people",
                 "type": "quantitative"
             }
         ]
