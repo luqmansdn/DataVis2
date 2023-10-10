@@ -49,7 +49,7 @@
                 "title": "Country"
             },
             {
-                "field": "Active",
+                "field": "Hospital Density per 100000 people",
                 "type": "quantitative"
             }
         ]
