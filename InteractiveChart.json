@@ -56,14 +56,14 @@
       "type": "quantitative",
       "title": "Hospital Density Per 100000 People",
       "axis": {"tickCount": 7},
-      "scale": {"domain": [0, 70]}
+      "scale": {"domain": [0, 60]}
     },
     "y": {
       "field": "Health Expenditure - % of GDP",
       "type": "quantitative",
       "title": "Health Expenditure - % of GDP",
       "axis": {"tickCount": 6},
-      "scale": {"domain": [0, 30]}
+      "scale": {"domain": [0, 20]}
     }
   },
   "layer": [
@@ -107,7 +107,6 @@
           {"field": "Country", "type": "nominal"},
           {"field": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
           {"field": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
-          {"field": "Continent", "type": "nominal", "format": ","},
           {"field": "Population", "type": "quantitative", "format": ","}
         ]
       }
@@ -135,8 +134,7 @@
           {"field": "Country", "type": "nominal"},
           {"field": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
           {"field": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
-          {"field": "Continent", "type": "nominal", "format": ","},
-          {"field": "Population", "type": "quantitative", "format": ","}
+           {"field": "Population", "type": "quantitative", "format": ","}
         ]
       }
     }
