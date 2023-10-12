@@ -45,7 +45,6 @@
     }
   ],
   "transform": [
-    {"filter": "datum.Hospital Density per 100000 people > 0"}
     {"filter": "datum.Population > Population_Above"},
     {
       "filter": "Continent_selection == null || datum.Continent == Continent_selection"
@@ -57,14 +56,14 @@
       "type": "quantitative",
       "title": "Hospital Density Per 100000 People",
       "axis": {"tickCount": 7},
-      "scale": {"type": "log","domain": [1, 70]}
+      "scale": {"domain": [0, 70]}
     },
     "y": {
       "field": "Health Expenditure - % of GDP",
       "type": "quantitative",
       "title": "Health Expenditure - % of GDP",
       "axis": {"tickCount": 6},
-      "scale": {"type": "log","domain": [1, 30]}
+      "scale": {"domain": [0, 30]}
     }
   },
   "layer": [

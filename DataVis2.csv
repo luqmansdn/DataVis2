@@ -1,4 +1,4 @@
-Continent,CountryCode,Country,Latitude,Longitude,Health Expenditure % of GDP,Hospital Density Per 100000 People,Population
+Continent,CountryCode,Country,Latitude,Longitude,Health Expenditure - % of GDP,Hospital Density Per 100000 People,Population
 Asia,AFG,Afghanistan,33,65,15.53,0.37,41128771
 Europe,ALB,Albania,41,20,,1.36,2842321
 Africa,DZA,Algeria,28,3,6.32,,44903225
