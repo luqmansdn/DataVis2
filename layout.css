@@ -11,7 +11,7 @@ body {
 }
 
 .page {
-    width: 850px;
+    width: 1000px;
     background-color: white;
     margin: auto;
     padding: 50px;
@@ -19,7 +19,8 @@ body {
 }
 
 .vis-container {
-    width: 100%;
+    width: 75%;
+    height: 75%;
 }
 
 .description h2,
