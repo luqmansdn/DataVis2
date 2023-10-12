@@ -13,7 +13,7 @@
       "bind": {
       "input": "range",
       "min": 0,
-        "max": 1000000000,
+        "max": 300000000,
         "step": 1000000,
         "name": "Minimum Population: "
       }
@@ -59,14 +59,14 @@
       "type": "quantitative",
       "title": "Hospital Density Per 100000 People",
       "axis": {"tickCount": 15},
-      "scale": {"type":"sqrt","domain": [0, 10]}
+      "scale": {"type":"sqrt","domain": [0, 12]}
     },
     "y": {
       "field": "Health_Expenditure_GDP_Percentage",
       "type": "quantitative",
       "title": "Health Expenditure - % of GDP",
       "axis": {"tickCount": 6},
-      "scale": {"type":"linear","domain": [0, 20]}
+      "scale": {"type":"linear","domain": [0, 25]}
     }
   },
   "layer": [
