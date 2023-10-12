@@ -45,8 +45,7 @@
     }
   ],
   "transform": [
-    {"filter": "datum.Hospital Density per 100000 people > 0"},
-    {"filter": "datum.Health Expenditure - % of GDP > 0"},
+    {"filter": "datum.Hospital Density per 100000 people > 0"}
     {"filter": "datum.Population > Population_Above"},
     {
       "filter": "Continent_selection == null || datum.Continent == Continent_selection"
