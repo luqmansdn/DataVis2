@@ -11,8 +11,8 @@
       "name": "Population_Above",
       "value": 0,
       "bind": {
-        "input": "range",
-        "min": 0,
+      "input": "range",
+      "min": 0,
         "max": 100000000,
         "step": 1000000,
         "name": "Minimum Population: "
@@ -45,30 +45,27 @@
     }
   ],
   "transform": [
-    {"filter": "datum.Active > 0"},
-    {"filter": "datum.Deaths > 0"},
+    {"filter": "datum.Hospital Density per 100000 people > 0"},
+    {"filter": "datum.Health Expenditure - % of GDP > 0"},
     {"filter": "datum.Population > Population_Above"},
     {
       "filter": "Continent_selection == null || datum.Continent == Continent_selection"
-    },
-    {
-      "calculate": "datum.Confirmed/datum.Population * 10000",
-      "as": "Cases per 10,000 Population"
     }
   ],
   "encoding": {
     "x": {
-      "field": "Confirmed",
+      "field": "Hospital Density Per 100000 People",
       "type": "quantitative",
-      "title": "Confirmed Cases",
+      "title": "Hospital Density Per 100000 People",
       "axis": {"tickCount": 7},
-      "scale": {"type": "log", "domain": [1, 10000000]}
+      "scale": {"type": "log","domain": [1, 70]}
     },
     "y": {
-      "field": "% of GDP spent on healthcare",
+      "field": "Health Expenditure - % of GDP",
       "type": "quantitative",
+      "title": "Health Expenditure - % of GDP",
       "axis": {"tickCount": 6},
-      "scale": {"type": "log", "domain": [1, 1000000]}
+      "scale": {"type": "log","domain": [1, 30]}
     }
   },
   "layer": [
@@ -110,15 +107,10 @@
         "opacity": {"value": 0.6},
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-          {"field": "Confirmed", "type": "quantitative", "format": ","},
-          {"field": "Active", "type": "quantitative", "format": ","},
-          {"field": "Deaths", "type": "quantitative", "format": ","},
-          {"field": "Recovered", "type": "quantitative", "format": ","},
-          {
-            "field": "Cases per 10,000 Population",
-            "type": "quantitative",
-            "format": ".2f"
-          }
+          {"field": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
+          {"field": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
+          {"field": "Continent", "type": "nominal", "format": ","},
+          {"field": "Population", "type": "quantitative", "format": ","}
         ]
       }
     },
@@ -136,22 +128,17 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'Guinea-Bissau' || datum['Country'] == 'Monaco' || datum['Country'] == 'Nauru' || datum['Country'] == 'Azerbaijan' || datum['Country'] == 'Cyprus'",
             "value": 1
           },
           "value": 0
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-          {"field": "Confirmed", "type": "quantitative", "format": ","},
-          {"field": "Active", "type": "quantitative", "format": ","},
-          {"field": "Deaths", "type": "quantitative", "format": ","},
-          {"field": "Recovered", "type": "quantitative", "format": ","},
-          {
-            "field": "Cases per 10,000 Population",
-            "type": "quantitative",
-            "format": ".2f"
-          }
+          {"field": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
+          {"field": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
+          {"field": "Continent", "type": "nominal", "format": ","},
+          {"field": "Population", "type": "quantitative", "format": ","}
         ]
       }
     }
