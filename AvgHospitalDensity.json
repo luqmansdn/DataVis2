@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"},
+    "transform": [
+      {"filter": "datum.Hospital_Density_Per_100000_People != null"},
+      {
+        "joinaggregate": [{
+          "op": "mean",
+          "field": "Hospital_Density_Per_100000_People",
+          "as": "AverageDensity"
+        }]
+      },
+      {"filter": "datum.Hospital_Density_Per_100000_People > 2"}
+    ],
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "aggregate": "average", "type": "quantitative",
+            "title": "Hospital Density Per 100000 People"
+          },
+          "y": {"field": "Continent", "type": "ordinal"},
+        "color": {
+        "field": "Continent",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "range": [
+            "#e41a1c",
+            "#984ea3",
+            "#ff7f00",
+            "#a6cee3",
+            "#377eb8",
+            "#a65628"
+          ]
+        }
+      },
+      "opacity": {"value": 0.6},
+      "tooltip": [
+        {"field": "Country", "type": "nominal"},
+       {"field": "Hospital_Density_Per_100000_People","title": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
+        {"field": "Population", "type": "quantitative", "format": ","}
+      ]
+    }
+
+          
+        }
+      ,
+      
+      {
+        "mark": {"type": "rule", "color": "red"},
+        "encoding": {
+          "x": {
+            "aggregate": "mean",
+            "field": "AverageDensity",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }
+  
