@@ -108,8 +108,8 @@
         "opacity": {"value": 0.6},
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-          {"field": "Hospital_Density_Per_100000_People", "type": "quantitative", "format": ","},
-          {"field": "Health_Expenditure_GDP_Percentage", "type": "quantitative", "format": ","},
+          {"field": "Hospital_Density_Per_100000_People", "title": "Hospital Density Per 100000 People","type": "quantitative", "format": ","},
+          {"field": "Health_Expenditure_GDP_Percentage","title": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
           {"field": "Population", "type": "quantitative", "format": ","}
         ]
       }
@@ -135,8 +135,8 @@
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-          {"field": "Hospital_Density_Per_100000_People", "type": "quantitative", "format": ","},
-          {"field": "Health_Expenditure_GDP_Percentage", "type": "quantitative", "format": ","},
+          {"field": "Hospital_Density_Per_100000_People","title": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
+          {"field": "Health_Expenditure_GDP_Percentage","title": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
            {"field": "Population", "type": "quantitative", "format": ","}
         ]
       }

@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Percentage of GDP spent on Health Expenditure ",
+    "title": "Percentage of GDP spent on Health Expenditure",
     "width": 800,
     "height": 450,
     "projection": {
