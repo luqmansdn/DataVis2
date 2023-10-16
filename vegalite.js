@@ -1,9 +1,14 @@
-var vg_1 = "DataVis2VegaLite.json";
+var vg_1 = "GDPMap.json";
 vegaEmbed("#GDP", vg_1).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
-var vg_2 = "InteractiveChart.json";
-vegaEmbed("#HospitalDensity", vg_2).then(function(result) {
+var vg_2 = "HospitalDensityVSGDP.json";
+vegaEmbed("#HospitalDensityGDP", vg_2).then(function(result) {
+// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+var vg_3 = "HospitalDensityVSPopulation.json";
+vegaEmbed("#HospitalDensityPopulation", vg_3).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);

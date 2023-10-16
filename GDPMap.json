@@ -36,6 +36,7 @@
     "encoding": {
         "color": {
             "field": "Health_Expenditure_GDP_Percentage",
+            "title": "Health Expenditure - % of GDP",
             "type": "quantitative",
             "scale": {
                 "type": "threshold",
@@ -50,6 +51,7 @@
             },
             {
                 "field": "Health_Expenditure_GDP_Percentage",
+                "title": "Health Expenditure - % of GDP",
                 "type": "quantitative"
             }
         ]
