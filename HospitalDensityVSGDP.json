@@ -11,8 +11,8 @@
       "name": "Population_Above",
       "value": 0,
       "bind": {
-      "input": "range",
-      "min": 0,
+        "input": "range",
+        "min": 0,
         "max": 100000000,
         "step": 1000000,
         "name": "Minimum Population: "
@@ -45,28 +45,49 @@
     }
   ],
   "transform": [
-    {"filter": "datum.Population > Population_Above"},
-    {"filter": "datum.Hospital_Density_Per_100000_People > 0"},
-    {"filter": "datum.Health_Expenditure_GDP_Percentage > 0"},
+    {
+      "filter": "datum.Population > Population_Above"
+    },
+    {
+      "filter": "datum.Hospital_Density_Per_100000_People > 0"
+    },
+    {
+      "filter": "datum.Health_Expenditure_GDP_Percentage > 0"
+    },
     {
       "filter": "Continent_selection == null || datum.Continent == Continent_selection"
     }
   ],
-  
   "encoding": {
     "x": {
       "field": "Hospital_Density_Per_100000_People",
       "type": "quantitative",
       "title": "Hospital Density Per 100000 People",
-      "axis": {"tickCount": 15},
-      "scale": {"type":"sqrt","domain": [0, 10]}
+      "axis": {
+        "tickCount": 15
+      },
+      "scale": {
+        "type": "sqrt",
+        "domain": [
+          0,
+          12
+        ]
+      }
     },
     "y": {
       "field": "Health_Expenditure_GDP_Percentage",
       "type": "quantitative",
       "title": "Health Expenditure - % of GDP",
-      "axis": {"tickCount": 6},
-      "scale": {"type":"linear","domain": [0, 20]}
+      "axis": {
+        "tickCount": 6
+      },
+      "scale": {
+        "type": "linear",
+        "domain": [
+          0,
+          22
+        ]
+      }
     }
   },
   "layer": [
@@ -78,10 +99,25 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
-            "range": [10, 50, 150, 200, 300, 400]
+            "domain": [
+              1000000,
+              10000000,
+              50000000,
+              100000000,
+              500000000
+            ],
+            "range": [
+              10,
+              50,
+              150,
+              200,
+              300,
+              400
+            ]
           },
-          "legend": {"format": ".1s"}
+          "legend": {
+            "format": ".1s"
+          }
         },
         "color": {
           "field": "Continent",
@@ -105,12 +141,31 @@
             ]
           }
         },
-        "opacity": {"value": 0.6},
+        "opacity": {
+          "value": 0.6
+        },
         "tooltip": [
-          {"field": "Country", "type": "nominal"},
-          {"field": "Hospital_Density_Per_100000_People", "title": "Hospital Density Per 100000 People","type": "quantitative", "format": ","},
-          {"field": "Health_Expenditure_GDP_Percentage","title": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
-          {"field": "Population", "type": "quantitative", "format": ","}
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Hospital_Density_Per_100000_People",
+            "title": "Hospital Density Per 100000 People",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "Health_Expenditure_GDP_Percentage",
+            "title": "Health Expenditure - % of GDP",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ","
+          }
         ]
       }
     },
@@ -124,8 +179,13 @@
         "fontStyle": "italic"
       },
       "encoding": {
-        "text": {"field": "Country", "type": "nominal"},
-        "color": {"value": "black"},
+        "text": {
+          "field": "Country",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "black"
+        },
         "opacity": {
           "condition": {
             "test": "datum['Country'] == 'Monaco' || datum['Country'] == 'Nauru' || datum['Country'] == 'Azerbaijan' || datum['Country'] == 'Cyprus'",
@@ -134,13 +194,34 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "Country", "type": "nominal"},
-          {"field": "Hospital_Density_Per_100000_People","title": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
-          {"field": "Health_Expenditure_GDP_Percentage","title": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
-           {"field": "Population", "type": "quantitative", "format": ","}
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Hospital_Density_Per_100000_People",
+            "title": "Hospital Density Per 100000 People",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "Health_Expenditure_GDP_Percentage",
+            "title": "Health Expenditure - % of GDP",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ","
+          }
         ]
       }
     }
   ],
-  "config": {"mark": {"invalid": null}}
+  "config": {
+    "mark": {
+      "invalid": null
+    }
+  }
 }

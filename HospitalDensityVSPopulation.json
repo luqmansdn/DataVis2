@@ -3,79 +3,84 @@
     "data": {
         "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
     },
-  "transform": [
-    {"filter": "datum.Population > 0"},
-    {"filter": "datum.Hospital_Density_Per_100000_People > 0"}
-  ],
-    "vconcat": [
+    "transform": [
         {
-            "width": 480,
-            "height": 240,
-            "title": "Hospital Density Per 100000 People VS Population",
-            "mark": "circle",
-            "encoding": {
-                "x": {
-                    "field": "Population",
-                    "type": "quantitative",
-                    "scale": {
-                        "type": "sqrt",
-                        "domain": {
-                            "param": "brush"
-                        }
-                    },
-                    "axis": {
-                        "title": ""
-                    }
-                },
-                "y": {
-                    "field": "Hospital_Density_Per_100000_People",
-                    "title": "Hospital Density Per 100000 People",
-                    "type": "quantitative"
-                },
-                "color": {
-                  "field": "Continent",
-                  "type": "nominal",
-                  "scale": {
-                    "domain": [
-                      "North America",
-                      "South America",
-                      "Europe",
-                      "Africa",
-                      "Asia",
-                      "Oceania"
-                    ],
-                    "range": [
-                      "#e41a1c",
-                      "#984ea3",
-                      "#ff7f00",
-                      "#a6cee3",
-                      "#377eb8",
-                      "#a65628"
-                    ]
-                  }
-                },
-                "opacity": {
-                    "value": 0.6
-                },
-                "tooltip": [
-                    {
-                        "field": "Country",
-                        "type": "nominal"
-                    },
-                    {
-                        "field": "Hospital_Density_Per_100000_People",
-                        "title": "Hospital Density Per 100000 People",
-                        "type": "quantitative",
-                        "format": ","
-                    },
-                    {
+            "filter": "datum.Population > 0"
+        },
+        {
+            "filter": "datum.Hospital_Density_Per_100000_People > 0"
+        }
+    ],
+    "vconcat": [
+            {
+                "width": 480,
+                "height": 240,
+                "title": "Hospital Density Per 100000 People VS Population",
+                "mark": "circle",
+                "encoding": {
+                    "x": {
                         "field": "Population",
                         "type": "quantitative",
-                        "format": ","
-                    }
-                ]
-            }
-        },
+                        "scale": {
+                            "type": "sqrt",
+                            "domain": {
+                                "param": "brush"
+                            }
+                        },
+                        "axis": {
+                            "title": ""
+                        }
+                    },
+                    "y": {
+                        "field": "Hospital_Density_Per_100000_People",
+                        "title": "Hospital Density Per 100000 People",
+                        "type": "quantitative"
+                    },
+                    "color": {
+                        "field": "Continent",
+                        "type": "nominal",
+                        "scale": {
+                            "domain": [
+                                "North America",
+                                "South America",
+                                "Europe",
+                                "Africa",
+                                "Asia",
+                                "Oceania"
+                            ],
+                            "range": [
+                                "#e41a1c",
+                                "#984ea3",
+                                "#ff7f00",
+                                "#a6cee3",
+                                "#377eb8",
+                                "#a65628"
+                            ]
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.6
+                    },
+                    "tooltip": [
+                        {
+                            "field": "Country",
+                            "type": "nominal"
+                        },
+                        {
+                            "field": "Hospital_Density_Per_100000_People",
+                            "title": "Hospital Density Per 100000 People",
+                            "type": "quantitative",
+                            "format": ","
+                        },
+                        {
+                            "field": "Population",
+                            "type": "quantitative",
+                            "format": ","
+                        }
+                    ]
+                }
+            },
+        
         {
             "width": 480,
             "height": 60,
@@ -110,26 +115,26 @@
                     }
                 },
                 "color": {
-                  "field": "Continent",
-                  "type": "nominal",
-                  "scale": {
-                    "domain": [
-                      "North America",
-                      "South America",
-                      "Europe",
-                      "Africa",
-                      "Asia",
-                      "Oceania"
-                    ],
-                    "range": [
-                      "#e41a1c",
-                      "#984ea3",
-                      "#ff7f00",
-                      "#a6cee3",
-                      "#377eb8",
-                      "#a65628"
-                    ]
-                  }
+                    "field": "Continent",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                            "North America",
+                            "South America",
+                            "Europe",
+                            "Africa",
+                            "Asia",
+                            "Oceania"
+                        ],
+                        "range": [
+                            "#e41a1c",
+                            "#984ea3",
+                            "#ff7f00",
+                            "#a6cee3",
+                            "#377eb8",
+                            "#a65628"
+                        ]
+                    }
                 },
                 "opacity": {
                     "value": 0.6

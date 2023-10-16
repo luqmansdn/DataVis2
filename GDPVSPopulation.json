@@ -1,0 +1,136 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 300,
+    "title": "Hospital Density Per 100000 People",
+    "data": {
+      "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
+    },
+    "params": [
+      {
+        "name": "Population_Above",
+        "value": 0,
+        "bind": {
+        "input": "range",
+        "min": 0,
+          "max": 100000000,
+          "step": 1000000,
+          "name": "Minimum Population: "
+        }
+      },
+      {
+        "name": "Continent_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "labels": [
+            "Show All",
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "name": "Continent Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Population > Population_Above"},
+      {"filter": "datum.Hospital_Density_Per_100000_People > 0"},
+      {"filter": "datum.Health_Expenditure_GDP_Percentage > 0"},
+      {
+        "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+      }
+    ],
+    
+    "encoding": {
+      "y": {
+        "field": "Population",
+        "type": "quantitative",
+        "title": "Population",
+        "axis": {"tickCount": 10},
+        "scale": {"type":"sqrt"}
+      },
+      "x": {
+        "field": "Health_Expenditure_GDP_Percentage",
+        "type": "quantitative",
+        "title": "Health Expenditure - % of GDP",
+        "axis": {"tickCount": 6},
+        "scale": {"type":"linear","domain": [0, 22]}
+      }
+    },
+    "layer": [
+      {
+        "mark":{"type": "line",
+        "point": true},
+        "encoding": {
+                "color": {
+            "field": "Continent",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "North America",
+                "South America",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania"
+              ],
+              "range": [
+                "#e41a1c",
+                "#984ea3",
+                "#ff7f00",
+                "#a6cee3",
+                "#377eb8",
+                "#a65628"
+              ]
+            }
+          },
+          "opacity": {"value": 0.6},
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+           {"field": "Health_Expenditure_GDP_Percentage","title": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
+            {"field": "Population", "type": "quantitative", "format": ","}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -12,
+          "fontSize": 11.5,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"field": "Country", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity": {
+            "condition": {
+              "test": "datum['Country'] == 'Indonesia' || datum['Country'] == 'Mexico' || datum['Country'] == 'Chile' || datum['Country'] == 'Italy' || datum['Country'] == 'Ethiopia'|| datum['Country'] == 'Papua New Guinea'",
+              "value": 1
+            },
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Hospital_Density_Per_100000_People","title": "Hospital Density Per 100000 People", "type": "quantitative", "format": ","},
+            {"field": "Health_Expenditure_GDP_Percentage","title": "Health Expenditure - % of GDP", "type": "quantitative", "format": ","},
+             {"field": "Population", "type": "quantitative", "format": ","}
+          ]
+        }
+      }
+    ],
+    "config": {"mark": {"invalid": null}}
+  }
