@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
+    "width": 500,
     "height": 300,
-    "title": "Hospital Density Per 100000 People",
+    "title": "Percentage of GDP Expenditure on Healthcare VS Population",
     "data": {
       "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
     },
