@@ -1,227 +1,99 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 300,
-  "title": "Hospital Density Per 100000 People",
   "data": {
     "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
   },
-  "params": [
-    {
-      "name": "Population_Above",
-      "value": 0,
-      "bind": {
-        "input": "range",
-        "min": 0,
-        "max": 100000000,
-        "step": 1000000,
-        "name": "Minimum Population: "
-      }
-    },
-    {
-      "name": "Continent_selection",
-      "bind": {
-        "input": "select",
-        "options": [
-          null,
-          "North America",
-          "South America",
-          "Europe",
-          "Africa",
-          "Asia",
-          "Oceania"
-        ],
-        "labels": [
-          "Show All",
-          "North America",
-          "South America",
-          "Europe",
-          "Africa",
-          "Asia",
-          "Oceania"
-        ],
-        "name": "Continent Selection: "
-      }
-    }
-  ],
+  "title": "Hospital Density per 100000 of Developed Countries (GDP Per Capita>$30000)",
+  "width": 600,
+  "height": 200,
   "transform": [
     {
-      "filter": "datum.Population > Population_Above"
-    },
-    {
-      "filter": "datum.Hospital_Density_Per_100000_People > 0"
-    },
-    {
-      "filter": "datum.Health_Expenditure_GDP_Percentage > 0"
-    },
-    {
-      "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+      "filter": "datum.GDP_PC > 30000"
     }
   ],
+  "mark": {
+    "type": "circle",
+    "opacity": 0.8,
+    "stroke": "black",
+    "strokeWidth": 1
+  },
   "encoding": {
     "x": {
-      "field": "Hospital_Density_Per_100000_People",
-      "type": "quantitative",
-      "title": "Hospital Density Per 100000 People",
+      "field": "Country",
+      "type": "nominal",
       "axis": {
-        "tickCount": 15
-      },
-      "scale": {
-        "type": "sqrt",
-        "domain": [
-          0,
-          12
-        ]
+        "grid": false
       }
     },
     "y": {
-      "field": "Health_Expenditure_GDP_Percentage",
-      "type": "quantitative",
-      "title": "Health Expenditure - % of GDP",
+      "field": "Continent",
+      "type": "ordinal",
       "axis": {
-        "tickCount": 6
-      },
-      "scale": {
-        "type": "linear",
-        "domain": [
-          0,
-          22
-        ]
+        "title": ""
       }
-    }
-  },
-  "layer": [
-    {
-      "mark": "circle",
-      "encoding": {
-        "size": {
-          "field": "Population",
-          "type": "quantitative",
-          "scale": {
-            "type": "threshold",
-            "domain": [
-              1000000,
-              10000000,
-              50000000,
-              100000000,
-              500000000
-            ],
-            "range": [
-              10,
-              50,
-              150,
-              200,
-              300,
-              400
-            ]
-          },
-          "legend": {
-            "format": ".1s"
-          }
-        },
-        "color": {
-          "field": "Continent",
-          "type": "nominal",
-          "scale": {
-            "domain": [
-              "North America",
-              "South America",
-              "Europe",
-              "Africa",
-              "Asia",
-              "Oceania"
-            ],
-            "range": [
-              "#e41a1c",
-              "#984ea3",
-              "#ff7f00",
-              "#a6cee3",
-              "#377eb8",
-              "#a65628"
-            ]
-          }
-        },
-        "opacity": {
-          "value": 0.6
-        },
-        "tooltip": [
-          {
-            "field": "Country",
-            "type": "nominal"
-          },
-          {
-            "field": "Hospital_Density_Per_100000_People",
-            "title": "Hospital Density Per 100000 People",
-            "type": "quantitative",
-            "format": ","
-          },
-          {
-            "field": "Health_Expenditure_GDP_Percentage",
-            "title": "Health Expenditure - % of GDP",
-            "type": "quantitative",
-            "format": ","
-          },
-          {
-            "field": "Population",
-            "type": "quantitative",
-            "format": ","
-          }
+    },
+    "size": {
+      "field": "Hospital_Density_Per_100000_People",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [
+          1,
+          5,
+          10,
+          15
+        ],
+        "range": [
+          20,
+          100,
+          300,
+          400,
+          600
+        ]
+      },
+      "legend": {
+        "format": ".1s"
+      }
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#a6cee3",
+          "#377eb8",
+          "#a65628"
         ]
       }
     },
-    {
-      "mark": {
-        "type": "text",
-        "align": "right",
-        "baseline": "middle",
-        "dx": -12,
-        "fontSize": 11.5,
-        "fontStyle": "italic"
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
       },
-      "encoding": {
-        "text": {
-          "field": "Country",
-          "type": "nominal"
-        },
-        "color": {
-          "value": "black"
-        },
-        "opacity": {
-          "condition": {
-            "test": "datum['Country'] == 'Monaco' || datum['Country'] == 'Nauru' || datum['Country'] == 'Azerbaijan' || datum['Country'] == 'Cyprus'",
-            "value": 1
-          },
-          "value": 0
-        },
-        "tooltip": [
-          {
-            "field": "Country",
-            "type": "nominal"
-          },
-          {
-            "field": "Hospital_Density_Per_100000_People",
-            "title": "Hospital Density Per 100000 People",
-            "type": "quantitative",
-            "format": ","
-          },
-          {
-            "field": "Health_Expenditure_GDP_Percentage",
-            "title": "Health Expenditure - % of GDP",
-            "type": "quantitative",
-            "format": ","
-          },
-          {
-            "field": "Population",
-            "type": "quantitative",
-            "format": ","
-          }
-        ]
+      {
+        "field": "Hospital_Density_Per_100000_People",
+        "title": "Hospital Density Per 100000 People",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "GDP_PC",
+        "title": "GDP Per Capita ($USD)",
+        "type": "quantitative",
+        "format": ","
       }
-    }
-  ],
-  "config": {
-    "mark": {
-      "invalid": null
-    }
+    ]
   }
 }

@@ -66,8 +66,8 @@
       "scale": {
         "type": "sqrt",
         "domain": [
-          0,
-          20
+          1,
+          22
         ]
       }
     },
@@ -147,8 +147,8 @@
             "type": "nominal"
           },
           {
-            "field": "GDP",
-            "title": "GDP",
+            "field": "GDP_USD_Billion",
+            "title": "GDP ($USD Billion)",
             "type": "quantitative",
             "format": ","
           },
@@ -185,7 +185,7 @@
         },
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Monaco' || datum['Country'] == 'Nauru' || datum['Country'] == 'Azerbaijan' || datum['Country'] == 'Cyprus'",
+            "test": "datum['Country'] == 'United States of America' || datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'Brazil' || datum['Country'] == 'Germany' || datum['Country'] == 'South Africa'",
             "value": 1
           },
           "value": 0
@@ -196,8 +196,8 @@
             "type": "nominal"
           },
           {
-            "field": "GDP",
-            "title": "GDP",
+            "field": "GDP_USD_Billion",
+            "title": "GDP ($USD Billion)",
             "type": "quantitative",
             "format": ","
           },
