@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
+    },
+    "title": "Hospital Density Per 100000 People",
+    "config": {
+        "view": {
+            "strokeWidth": 0,
+            "step": 13
+        },
+        "axis": {
+            "domain": false
+        }
+    },
+    "mark": "rect",
+    "encoding": {
+        "x": {
+            "field": "Continent",
+            "type": "ordinal",
+            "title": "Continent",
+            "axis": {
+                "labelAngle": 0,
+                "format": "%e"
+            }
+        },
+        "y": {
+            "field": "Country",
+            "type": "ordinal",
+            "title": "Country"
+        },
+        "color": {
+            "field": "Hospital_Density_Per_100000_People",
+            "aggregate": "max",
+            "type": "quantitative",
+            "legend": {
+                "title": null
+            }
+        }
+    }
+  }
+  
