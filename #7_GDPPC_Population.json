@@ -1,0 +1,145 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 300,
+    "title": "GDP Per Capita VS Population",
+    "data": {
+      "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
+    },
+    "params": [
+      {
+        "name": "GDP_USD_Billion_Above",
+        "value": 0,
+        "bind": {
+          "input": "range",
+          "min": 0,
+          "max": 30000,
+          "step": 5,
+          "name": "Minimum GDP ($USD Billion): "
+        }
+      },
+      {
+        "name": "Continent_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "labels": [
+            "Show All",
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "name": "Continent Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "datum.GDP_USD_Billion > GDP_USD_Billion_Above"
+      },
+      {
+        "filter": "datum.GDP_PC > 0"
+      },
+      {
+        "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Population",
+        "type": "quantitative",
+        "title": "Population",
+        "axis": {
+          "tickCount": 10
+        },
+        "scale": {
+          "type": "sqrt",
+          "domain": [
+            0,
+            1500000000
+          ]
+        }
+      },
+      "y": {
+        "field": "GDP_USD_Billion",
+        "type": "quantitative",
+        "title": "GDP ($USD Billion)",
+        "axis": {
+          "tickCount": 6
+        },
+        "scale": {
+          "type": "sqrt",
+          "domain": [
+            0,
+            40000
+          ]
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle",
+        "encoding": {
+           "color": {
+            "field": "Continent",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "North America",
+                "South America",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania"
+              ],
+              "range": [
+                "#e41a1c",
+                "#984ea3",
+                "#ff7f00",
+                "#a6cee3",
+                "#377eb8",
+                "#a65628"
+              ]
+            }
+          },
+          "opacity": {
+            "value": 0.6
+          },
+          "tooltip": [
+            {
+              "field": "Country",
+              "type": "nominal"
+            },
+            {
+              "field": "GDP_USD_Billion",
+              "title": "GDP ($USD Billion)",
+              "type": "quantitative",
+              "format": ","
+            },
+            {
+              "field": "GDP_PC",
+              "title": "GDP Per Capita ($USD)",
+              "type": "quantitative",
+              "format": ","
+            },
+            {
+              "field": "Population",
+              "type": "quantitative",
+              "format": ","
+            }
+          ]
+        }
+      }
+    ]
+  }
