@@ -1,5 +1,5 @@
 var vg_1 = "1_GDP_GDP_Percentage.json";
-vegaEmbed("#GDP_GDP%", vg_1).then(function(result) {
+vegaEmbed("#GDP_GDP_Percentage", vg_1).then(function(result) {
 }).catch(console.error);
 
 var vg_2 = "2_GDPMap.json";

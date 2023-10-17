@@ -2,6 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"},
     "title": "Countries with > 5 Hospitals per 100000 people",
+    "width": 400,
+    "height": 100,
     "mark": "rect",
     "transform": [
         {
@@ -11,7 +13,7 @@
     "encoding": {
       "y": {"field": "Continent", "type": "ordinal"},
       "x": {"field": "Country", "type": "ordinal"},
-      "color": {"aggregate": "mean", "field": "Hospital_Density_Per_100000_People", "title": "Hospital Density Per 100000 People"},
+      "color": {"aggregate": "mean", "field": "Hospital_Density_Per_100000_People", "title": "Hospital Density Per 100000"},
       "tooltip": [
         {
           "field": "Country",

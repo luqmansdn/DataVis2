@@ -21,147 +21,179 @@
 
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="layout.css" media="all">
-  <title>Gaps in Global Healthcare</title>
+  <title>Bridging the Divide: Gaps in Global Healthcare</title>
 </head>
 
+<style>
+  body {
+    background-image: url("GlobalHealthcareImage.jpeg");
+  }
+</style>
 
 <body>
 
   <div class="page">
-    <!--START HEALTH CARE EXPENDITURE -->
+
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h1>Gaps in Global Healthcare</h1>
-        <p>This page demonstrates the extent gaps that exist in healthcare around the world</p>
+        <p>Healthcare around the world is often riddled with inequality and unfair distribution of resources. The need to understand gaps in Global Healthcare has never been more pressing, especially in an ever globalising world. It is critical to utilise powerful and insightful representations of the disparities and inequalities that exist in healthcare systems worldwide, shedding light on the critical issues and challenges faced by countries and regions in providing equitable access to healthcare services.</p>
       </div>
     </div>
-    <!-- end pure grid group -->
 
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-1">
-        <h2>Healthcare Expenditure</h2>
+    <hr style="height:10px;border-width:0;color:lightblue;background-color:lightblue">
+
+    <!--START HEALTH CARE EXPENDITURE -->
+
+    <section>
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <h2>Healthcare Expenditure</h2>
+        </div>
+      </div>
+      <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <h3>GDP Expenditure on Healthcare</h3>
+        </div>
       </div>
       <div class="pure-g">
         <div class="pure-u-2-3">
-          <h3>GDP Expenditure on Healthcare</h3>
-          <div id="GDP_GDP%" class="vis-container"></div>
+          <div id="GDP_GDP_Percentage" class="vis-container"></div>
         </div>
         <div class="pure-u-1-3">
-          <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-            sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
+          <p>Gross Domestic Product (GDP) and the percentage of GDP expenditure on healthcare are two critical economic
+            indicators that offer insights into a country's overall economic health and the allocation of resources for
+            healthcare services.</p>
+          <p> Understanding the relationship between these two variables is essential for assessing a nation's economic
+            development and the state of its healthcare system. It can be noted that the USA has the highest GDP as well
+            as expenditure on healthcare</p>
+        </div>
+      </div>
+      <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+      
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <h3>Overview of GDP Expenditure on Healthcare Worldwide</h3>
         </div>
       </div>
 
-      <!-- pure grid group -->
       <div class="pure-g">
         <div class="pure-u-1-1">
-          <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-            sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
+          <p>This map below provides a clear and intuitive representation of how nations allocate their economic
+            resources to healthcare, offering valuable insights into their healthcare systems and priorities. It is
+            observable that large parts of Africa do not spend significantly on healthcare expenditures. This map allows
+            for easy comparison between different regions, highlighting disparities and trends in healthcare spending.
+            This enables quick identification as to which countries allocate a larger portion of their GDP to healthcare
+            and which allocate less</p>
           <div id="GDPMap" class="vis-container"></div>
         </div>
       </div>
       <!--END HEALTH CARE EXPENDITURE -->
+    </section>
+    <hr style="height:10px;border-width:0;color:lightblue;background-color:lightblue">
 
+    <section>
       <!--START HEALTH CARE INFRASTRUCTURE -->
       <div class="pure-g">
         <div class="pure-u-1-1">
           <h2>Healthcare Infrastructure</h2>
         </div>
-
+      </div>
+      <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+      <div class="pure-g">
         <div class="pure-u-1-1">
           <h3>Hospital Density per 100000 people in Developed Countries</h3>
         </div>
+      </div>
 
-        <div class="pure-g">
-          <div class="pure-u-2-3">
-            <div id="DevelopedCountries_HospitalDensity" class="vis-container"></div>
-          </div>
-          <div class="pure-u-1-3">
-            <p>Countries with GDP more than 30000 per capita. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-              sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
-          </div>
-        </div>
-
+      <div class="pure-g">
         <div class="pure-u-1-1">
-          <h3>Hospital Density per 100000 people compared to Populations</h3>
+          <div id="DevelopedCountries_HospitalDensity" class="vis-container"></div>
         </div>
+      </div>
 
-        <div class="pure-g">
-          <div class="pure-u-1-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-              sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
-          </div>
-          <div class="pure-u-2-3">
-            <div id="HospitalDensity_Population" class="vis-container"></div>
-          </div>
-        </div>
-
+      <div class="pure-g">
         <div class="pure-u-1-1">
-          <h3>Countries with High Hospital Densities</h3>
+          <p>The above bubble plot provides a comprehensive overview of healthcare infrastructure in countries with a per capita Gross Domestic Product (GDP) exceeding $30,000. It should be noted that a large number of these affluent nations are found in Europe, and that no country in Africa or South America possesses a GDP Per Capita greater than $30000. The accessibility of healthcare facilities in affluent nations is thus evident, shedding light on the quality of healthcare infrastructure and its implications for public health</p>
         </div>
+      </div>
+      <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+      <div class="pure-u-1-1">
+        <h3>Hospital Density per 100000 people compared to Populations</h3>
+      </div>
 
-        <div class="pure-g">
-          <div class="pure-u-2-3">
-            <div id="DensityHeatMap" class="vis-container"></div>
-          </div>
-          <div class="pure-u-1-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-              sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
-          </div>
+      <div class="pure-g">
+        <div class="pure-u-1-3">
+          <p>The main graph on the right presents an analysis of the hospital density against the world population. These details can be further investigated in the concatneated visualisation, enabling zooming into specific population ranges to discover the relationship between nations with similar elements. This fosters a comparative analysis of healthcare infrastructure, population distribution, and healthcare accessibility.</p> <p>Interactive elements and comparative charts allow users to explore the relationships between hospital density and population sizes, providing a dynamic understanding of global healthcare disparities. This visualization not only offers insights into healthcare resource allocation but also encourages evidence-based healthcare policies and informed decision-making on a global scale.</p>
         </div>
+        <div class="pure-u-2-3">
+          <div id="HospitalDensity_Population" class="vis-container"></div>
+        </div>
+      </div>
+      <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+      <div class="pure-u-1-1">
+        <h3>Countries with High Hospital Densities</h3>
+      </div>
 
-        <!--ENDHEALTH CARE INFRASTRUCTURE -->
+      <div class="pure-g">
+        <div class="pure-u-2-3">
+          <div id="DensityHeatMap" class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-3">
+          <p>The Heatmap explores countries that have a high hospital density - with density of more than 5 hospitals per 100000 people. It can be noted that these high densities may be due to a number of factors, such as a small population, an affluent government among other factors.</p>
+        </div>
+      </div>
 
-        <!--START ECONOMY -->
-        <div class="pure-g">
-          <div class="pure-u-1-1">
-            <h2>Global Economies</h2>
-          </div>
+      <!--ENDHEALTH CARE INFRASTRUCTURE -->
+    </section>
+    <hr style="height:10px;border-width:0;color:lightblue;background-color:lightblue">
 
-          <div class="pure-u-1-1">
-            <h3>Global GDP Distribution</h3>
-          </div>
+    <section>
+      <!--START ECONOMY -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <h2>Global Economies</h2>
+        </div>
+      </div>
+      <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <h3>Global GDP Distribution</h3>
+        </div>
+      </div>
 
-          <div class="pure-g">
-            <div class="pure-u-1-2">
-              <div id="GDPPieChart" class="vis-container"></div>
-            </div>
-            <div class="pure-u-1-2">
-              <p>Countries with GDP more than 30000 per capita. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-                sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
-            </div>
-          </div>
+      <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div id="GDPPieChart" class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-2">
+          <p>The donut chart shows how the worlds wealth is distributed among countries, with a total of 99406.43 Billion USD spread amongst the worlds nations. It is clear that some continents are much more affluent than others, even if there is a lot of countries within the continent. </p><p> In Africa, which contains 54 countries, the GDP amongst all of its nations is signifcantly less compared to other continents. A similar observation can be drawn for South America. This facilitates an understanding of where the majority of the world's wealth is concentrated, highlighting the economic powerhouses that drive the global economy.</p>
+        </div>
+      </div>
+      <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <h3>GDP Compared to Global Populations</h3>
+        </div>
+      </div>
 
-          <div class="pure-u-1-1">
-            <h3>GDP Compared to Global Populations</h3>
-          </div>
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <p>An informative view of the relationship between the Gross Domestic Product (GDP) of countries and their respective populations can be observed from the below scatterplot. This visualisation serves as a lens through which the extent of how economic wealth is distributed across the world, unveiling the disparities and intricacies of the global economic landscape.</p>
+        </div>
+      </div>
 
-          <div class="pure-g">
-            <div class="pure-u-1-2">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-                sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
-            </div>
-            <div class="pure-u-1-2">
-              <div id="GDPPC_Population" class="vis-container"></div>
-            </div>
-          </div>
+      <div class="pure-g"></div>
+      <div class="pure-u-1-1">
+        <div id="GDPPC_Population" class="vis-container"></div>
+      </div>
+  </div>
+  </div>
 
+  <!--END ECONOMY -->
 
-          <!--END ECONOMY -->
-
-
-
-        </div> <!-- end page -->
+  </div> <!-- end page -->
 
 </body>
 

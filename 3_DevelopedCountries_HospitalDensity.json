@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
   },
   "title": "Hospital Density per 100000 of Developed Countries (GDP Per Capita>$30000)",
-  "width": 600,
+  "width": 750,
   "height": 200,
   "transform": [
     {
@@ -35,6 +35,7 @@
     "size": {
       "field": "Hospital_Density_Per_100000_People",
       "type": "quantitative",
+      "title": "Hospital Density Per 100000",
       "scale": {
         "type": "threshold",
         "domain": [

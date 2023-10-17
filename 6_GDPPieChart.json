@@ -12,9 +12,6 @@
       "filter": "datum.GDP_USD_Billion > 0"
     },
     {
-      "filter": "datum.Hospital_Density_Per_100000_People > 0"
-    },
-    {
       "calculate": "datum.GDP_USD_Billion",
       "as": "value"
     },
@@ -74,7 +71,7 @@
           "type": "arc",
           "innerRadius": 100,
           "outerRadius": 150,
-          "stroke": "#141010",
+          "stroke": "#b9b0b0",
           "strokeWidth": 0.4
         }
       },
