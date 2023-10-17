@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global GDP",
+  "title": "Global GDP's",
   "width": 300,
   "height": 200,
   "data": {
