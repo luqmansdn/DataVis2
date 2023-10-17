@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Global GDP",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/luqmansdn/DataVis2/main/DataVis2.csv"
+  },
+  
+  "transform": [
+    {
+      "filter": "datum.GDP_USD_Billion > 0"
+    },
+    {
+      "filter": "datum.Hospital_Density_Per_100000_People > 0"
+    },
+    {
+      "calculate": "datum.GDP_USD_Billion",
+      "as": "value"
+    },
+    {
+      "calculate": "datum.GDP_USD_Billion/99406.42849",
+      "as": "Global_GDP_Percentage"
+    }
+  ],
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#a6cee3",
+          "#377eb8",
+          "#a65628"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Global_GDP_Percentage",
+        "title": "Percentage of Global GDP (%)",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "GDP_USD_Billion",
+        "title": "GDP ($USD Billion)",
+        "type": "quantitative",
+        "format": ","
+      }
+    ]},
+    "layer": [
+      {
+        "mark": {
+          "type": "arc",
+          "innerRadius": 100,
+          "outerRadius": 150,
+          "stroke": "#141010",
+          "strokeWidth": 0.4
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "text": "99406.42849 ($USD Billion)",
+         "align": "center",
+         "fill": "brown",
+         "fontSize":15
+        }
+      }
+    ]
+  
+}
